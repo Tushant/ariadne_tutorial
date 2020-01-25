@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+ariadne = "*"
+pillow = "*"
+django-multiselectfield = "*"
+stripe = "*"
+django-environ = "*"
+uvicorn = "*"
+python-dateutil = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"

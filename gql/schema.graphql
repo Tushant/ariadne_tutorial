@@ -1,0 +1,38 @@
+type Query {
+  users: Users
+  user(email: String!): User
+  jobs: Jobs
+  job(id: UUID!): Job
+}
+
+type Users {
+  data: [UserData]
+}
+
+type UserData {
+  id: UUID!
+  email: String
+  username: String
+}
+
+type User {
+  data: UserData
+}
+
+type Jobs {
+  data: [JobData]
+}
+
+type Job {
+  data: JobData
+}
+
+type JobData {
+  id: UUID!
+  summary: String
+  budget: Int
+  deadline: Date
+  taken: Boolean
+  done: Boolean
+  timestamp: DateTime
+}
